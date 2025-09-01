@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/index.css" />
+  </head>
+  <body>
+    <body>
+      <div id="root"></div>
+      <script src="./react-lib/react.development.js"></script>
+      <script src="./react-lib/react-dom.development.js"></script>
+
+      <script>
+        const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+        const numberElement = React.createElement(
+          "h1",
+          null,
+          `Generated Number: ${randomNumber}`
+        );
+        const resultElement = React.createElement(
+          "h2",
+          null,
+          randomNumber % 2 === 0 ? "The number is even!" : "The number is odd!"
+        );
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        {
+        //maneira errada 
+        //const root = ReactDOM.createRoot(document.body);
+        }
+        //root.render([numberElement, resultElement]);
+        root.render(React.createElement("div",null,[numberElement, resultElement]));
+      </script>
+    </body>
+  </body>
+</html>

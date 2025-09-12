@@ -1,5 +1,7 @@
 import React from "react";
 import PageHeading from "./PageHeading";
+import ProductListing from "./ProductListing";
+import products from "../data/products";
 
 export default function Home() {
   return (
@@ -8,6 +10,7 @@ export default function Home() {
         Add a touch of creativity to your space with our wide range of fun and
         unique stickers. Perfect for any accasion!
       </PageHeading>
+      <ProductListing products={products}/>
     </div>
   );
 }

@@ -241,3 +241,10 @@ body {
     font-size: var(--font-size-lg);
     color: var(--primary-color);
 }
+
+/*
+.btn-primary{
+    background-color: black !important;
+    border: #4C1D95 !important ;
+}
+*/

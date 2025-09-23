@@ -86,6 +86,47 @@ export default function Home() {
         <div className="col-3 border p-3 bg-success text-white">Column 2</div>
         <div className="col-3 border p-3 bg-danger text-white">Column 3</div>
       </div>
+      <div className="container col-8 justify-content-center mt-3 border border-dark rounded">
+        <form>
+          <div class="mb-3">
+            <label htmlFor="exampleInputEmail1" class="form-label">
+              Email address
+            </label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label htmlFor="exampleInputPassword1" class="form-label">
+              Password
+            </label>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" htmlFor="exampleCheck1">
+              Check me out
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Submit
+          </button>
+        </form>
+      </div>
       <PageHeading title="Explore Eazy Stickers!">
         Add a touch of creativity to your space with our wide range of fun and
         unique stickers. Perfect for any accasion!

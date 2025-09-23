@@ -3,6 +3,8 @@ import PageHeading from "./PageHeading";
 import ProductListing from "./ProductListing";
 import products from "../data/products";
 import { BootsrapButton } from "./BootsrapButton";
+import developerImage from "../assets/stickers/developer.png";
+import breakImage from "../assets/stickers/break.png";
 
 export default function Home() {
   return (
@@ -52,6 +54,37 @@ export default function Home() {
             aria-label="Colse"
           ></button>
         </div>
+      </div>
+      <div className="container d-flex justify-content-center align-items-center gap-4">
+        <div className="card" style={{ width: "18rem" }}>
+          <img src={developerImage} className="card-img-top" alt="ng" />
+          <div className="card-body">
+            <h5 className="card-title">Card title</h5>
+            <p className="card-text">
+              Some Quick example text to build on the card
+            </p>
+            <a href="#" className="btn btn-primary">
+              go somewhere
+            </a>
+          </div>
+        </div>
+        <div className="card" style={{ width: "18rem" }}>
+          <img src={breakImage} className="card-img-top" alt="ng" />
+          <div className="card-body">
+            <h5 className="card-title">Card title</h5>
+            <p className="card-text">
+              Some Quick example text to build on the card
+            </p>
+            <a href="#" className="btn btn-primary">
+              go somewhere
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="row justify-content-center text-center mt-3 gap-3">
+        <div className="col-3 border p-3 bg-warning text-white">Column 1</div>
+        <div className="col-3 border p-3 bg-success text-white">Column 2</div>
+        <div className="col-3 border p-3 bg-danger text-white">Column 3</div>
       </div>
       <PageHeading title="Explore Eazy Stickers!">
         Add a touch of creativity to your space with our wide range of fun and
